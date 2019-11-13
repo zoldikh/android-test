@@ -46,7 +46,7 @@ public class UiControllerModule {
       return new EspressoUiControllerAdapter(platformUiControllers.get(0));
     } else {
       throw new IllegalStateException(
-          "Found more than one androidx.test.internal.platform.UiController");
+          "Found more than one androidx.test.platform.ui.UiController");
     }
   }
 
