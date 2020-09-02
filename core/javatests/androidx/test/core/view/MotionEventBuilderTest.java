@@ -2,6 +2,7 @@ package androidx.test.core.view;
 
 import static androidx.test.core.view.MotionEventBuilder.newBuilder;
 import static com.google.common.truth.Truth.assertThat;
+import static junit.framework.Assert.fail;
 
 import android.os.SystemClock;
 import android.view.MotionEvent;
@@ -32,6 +33,7 @@ public final class MotionEventBuilderTest {
     assertThat(event.getYPrecision()).isEqualTo(0f);
     assertThat(event.getDeviceId()).isEqualTo(0);
     assertThat(event.getEdgeFlags()).isEqualTo(0);
+    fail("me");
   }
 
   @Test
